@@ -1,0 +1,34 @@
+.our-team {
+  background-color: var(--light-primary);
+  border-top: solid 7.5px var(--primary-color);
+
+  .team-item {
+    flex-direction: column;
+    text-align: center;
+
+    img {
+      width: 200px;
+      border-radius: 50%;
+      padding: 1em;
+    }
+
+    .text {
+      padding: 2em;
+      h3 {
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .team-item {
+      flex-direction: row;
+      text-align: justify;
+      justify-content: space-between;
+    }
+
+    img {
+      margin-right: 3em;
+    }
+  }
+}

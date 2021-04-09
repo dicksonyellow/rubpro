@@ -1,0 +1,32 @@
+.we-do {
+  background-color: var(--light-primary);
+  min-height: 300px;
+  text-align: center;
+  border-bottom: solid 7.5px var(--primary-color);
+
+  @media (min-width: 768px) {
+    p {
+      margin: 0 6em;
+    }
+  }
+}
+
+.about-we-do {
+  .title-and-icon {
+    padding-top: 10em;
+  }
+
+  @media (min-width: 1100px) {
+    text-align: left;
+
+    p {
+      margin: 0 20em 0 0;
+    }
+
+    .title-and-icon {
+      align-self: flex-start;
+      padding-top: unset;
+      justify-content: flex-start;
+    }
+  }
+}

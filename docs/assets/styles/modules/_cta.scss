@@ -1,0 +1,48 @@
+.cta {
+  min-height: 250px;
+  text-align: center;
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form {
+    width: auto;
+    height: auto;
+    position: relative;
+    padding: 2em;
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea {
+      width: 100%;
+      border: 0;
+      border-bottom: 1px solid #86969d;
+      padding: 30px 0 10px;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      font-size: 1rem;
+      font-family: "lato", sans-serif;
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: none;
+    }
+
+    button {
+      margin: 10px 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    text-align: left;
+
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

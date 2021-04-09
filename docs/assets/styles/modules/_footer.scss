@@ -1,0 +1,42 @@
+footer {
+  background-color: var(--light-primary);
+  color: var(--dark-color);
+  text-align: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+
+  .f-top {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+
+    .logo {
+      padding: 5px;
+      img {
+        width: 100px;
+      }
+    }
+
+    a {
+      color: var(--dark-color);
+    }
+  }
+
+  .f-bottom {
+    background-color: var(--dark-color);
+    color: #fff;
+  }
+
+  @media (min-width: 768px) {
+    .f-top .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .logo {
+      text-align: left;
+    }
+
+    .f-contacts {
+      text-align: right;
+    }
+  }
+}

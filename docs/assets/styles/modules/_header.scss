@@ -1,0 +1,150 @@
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  z-index: 10;
+
+  .logo {
+    padding: 5px;
+    img {
+      width: 50px;
+    }
+  }
+
+  .flex {
+    justify-content: space-between;
+  }
+
+  .header-strip {
+    display: none;
+    background-color: var(--dark-color);
+    color: #fff;
+
+    .flex {
+      justify-content: space-between;
+    }
+
+    .social-icons {
+      a i {
+        margin-left: 15px;
+        font-size: 20px;
+        color: #fff;
+      }
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  i {
+    font-size: 2em;
+    color: #fff;
+  }
+
+  .mobile-menu {
+    width: auto;
+    height: 24px;
+    position: relative;
+
+    ::before {
+      content: "";
+      width: 24px;
+      height: 4px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: var(--dark-color);
+      border-radius: 5px;
+    }
+    .menu-bar {
+      width: 16px;
+      height: 4px;
+      align-self: center;
+      background-color: var(--dark-color);
+      border-radius: 5px;
+    }
+
+    ::after {
+      content: "";
+      width: 24px;
+      height: 4px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: var(--dark-color);
+      border-radius: 5px;
+    }
+  }
+
+  .main-nav {
+    display: none;
+
+    &--vissible {
+      display: block;
+      position: absolute;
+      background-color: var(--dark-color);
+      width: 50vw;
+      height: 100vh;
+      top: 100%;
+      right: 0;
+    }
+  }
+
+  .nav-links {
+    display: none;
+
+    &--vissible {
+      display: inline-block;
+      padding: 2em;
+    }
+
+    li {
+      margin: 1.5em;
+      text-align: right;
+    }
+
+    a {
+      font-weight: bolder;
+      color: #fff;
+    }
+  }
+
+  li a:hover {
+    border-bottom: 1px #163e6c solid;
+  }
+
+  @media (min-width: 768px) {
+    .main-nav {
+      display: inline-block;
+
+      .nav-links {
+        a {
+          color: #163e6c;
+        }
+      }
+    }
+
+    .mobile-menu {
+      display: none;
+    }
+
+    .nav-links {
+      display: flex;
+
+      li {
+        margin: unset;
+      }
+
+      a {
+        margin-left: 40px;
+      }
+    }
+
+    .header-strip {
+      display: block;
+    }
+  }
+}

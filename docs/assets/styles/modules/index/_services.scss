@@ -1,0 +1,47 @@
+.services {
+  min-height: 800px;
+  position: relative;
+  text-align: center;
+  .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-primary);
+    clip-path: polygon(100% 10%, 100% 80%, 0 90%, 0 20%);
+    z-index: -1;
+  }
+
+  .text-block .flex {
+    justify-content: center;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .text-block {
+      margin: 0 5em;
+    }
+  }
+
+  @media (min-width: 1100px) {
+    text-align: unset;
+
+    .text-block {
+      margin: unset;
+    }
+
+    .text-block .flex {
+      justify-content: unset;
+    }
+
+    .grid {
+      grid-template-columns: (40% 60%);
+    }
+  }
+}

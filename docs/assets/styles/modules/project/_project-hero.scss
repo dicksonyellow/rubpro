@@ -1,0 +1,31 @@
+.project-hero {
+  width: 100%;
+  min-height: 300px;
+  background-color: #ffffffb1;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 3em;
+
+  .main-hero-text {
+    text-align: center;
+    padding: 2em;
+
+    h1 {
+      font-weight: normal;
+      color: var(--dark-color);
+    }
+  }
+
+  @media (min-width: 1100px) {
+    padding-top: 4em;
+
+    h1 {
+      font-size: 4rem;
+    }
+  }
+}
+
+.project {
+  min-height: 500px;
+}
